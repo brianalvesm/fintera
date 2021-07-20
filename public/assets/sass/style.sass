@@ -1,0 +1,31 @@
+@use "sass:color"
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap')
+
+@import "base/variables"
+@import "base/helpers"
+@import "components/buttons"
+@import "components/forms"
+@import "pages/signin"
+@import "pages/signup"
+@import "pages/welcome"
+@import "pages/dashboard"
+
+.logo
+  @media (max-width: 575.98px)
+    max-width: 135px
+
+.alert.alert-custom .alert-text
+  width: min-content
+
+// Overwrite do thumbnail de usuário
+.symbol.symbol-lg-35 .symbol-label
+  width: 22px
+  height: 22px
+  overflow: hidden
+  img
+    max-width: 22px
+
+.svg-icon.svg-icon-primary svg g [fill]
+  fill: $color-primary !important

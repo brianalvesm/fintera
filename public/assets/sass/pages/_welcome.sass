@@ -1,0 +1,31 @@
+.welcome
+  a
+    color: $color-primary
+    &:hover
+      color: $color-primary-dark
+  
+  .content
+    background:
+      image: url('../media/bg/pink-umbrellas.jpg')
+      repeat: no-repeat
+      size: cover
+      position: top center
+    @media (max-width: 991.98px)
+      padding: 0
+
+  .aside-container,
+  .signin-signup-container
+    width: 100%
+    // Desktop & Tablet view
+    @media (min-width: 576px)
+      max-width: 400px
+    
+    // Mobile mode
+    @media (max-width: 575.98px)
+      max-width: 100%
+  
+  .login-aside
+    // Desktop view
+    @media (min-width: 992px)
+      width: 100%
+      max-width: 600px
