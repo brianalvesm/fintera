@@ -50,13 +50,59 @@
                 <!--end::Chat-->
                 <!--begin::User-->
                 <div class="topbar-item">
-                  <div class="btn btn-icon btn-icon-mobile w-auto btn-clean d-flex align-items-center btn-lg px-2" id="kt_quick_user_toggle">
+                  <div class="btn btn-icon btn-icon-mobile w-auto btn-clean d-flex align-items-center btn-lg px-2" data-toggle="dropdown">
                     <span class="symbol symbol-lg-35 symbol-25 symbol-light-success">
                       <span class="symbol-label font-size-h5 font-weight-bold">
                         <img src="assets/media/users/100_1.jpg" alt="Usuário">
                       </span>
                     </span>
                   </div>
+
+                  <!--begin::Dropdown-->
+                  <div class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-anim-up dropdown-menu-lg">
+                    <form>
+                      <!--begin::Content-->
+                      <div class="tab-content">
+                        <!--begin::Tabpane-->
+                        <div class="tab-pane active show p-8" id="topbar_notifications_notifications" role="tabpanel">
+                          <!--begin::Scroll-->
+                          <div class="scroll pr-7 mr-n7" data-scroll="true" data-height="300" data-mobile-height="200">
+                            <!--begin::Item-->
+                            <div class="d-flex align-items-center mb-6">
+                              <!--begin::Text-->
+                              <div class="d-flex flex-column font-weight-bold">
+                                <a href="#" class="font-weight-normal font-size-md light-gray">Central de Ajuda</a>
+                              </div>
+                              <!--end::Text-->
+                            </div>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <div class="d-flex align-items-center mb-6">
+                              <!--begin::Text-->
+                              <div class="d-flex flex-column font-weight-bold">
+                                <a href="#" class="font-weight-normal font-size-md light-gray">Perguntas Frequentes</a>
+                              </div>
+                              <!--end::Text-->
+                            </div>
+                            <!--end::Item-->
+                            <!--begin::Item-->
+                            <div class="d-flex align-items-center">
+                              <!--begin::Text-->
+                              <div class="d-flex flex-column font-weight-bold">
+                                <a href="#" class="font-weight-normal font-size-md light-gray">Chamado de Suporte</a>
+                              </div>
+                              <!--end::Text-->
+                            </div>
+                            <!--end::Item-->
+                          </div>
+                          <!--end::Scroll-->
+                        </div>
+                        <!--end::Tabpane-->
+                      </div>
+                      <!--end::Content-->
+                    </form>
+                  </div>
+                  <!--end::Dropdown-->
                 </div>
                 <!--end::User-->
               </div>
@@ -221,7 +267,9 @@
     </div>
     <!-- end: Content -->
     <!--end::Main-->
+    <script src="assets/plugins/global/plugins.bundle.js"></script>
     <script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
+    <script src="assets/js/scripts.bundle.js"></script>
   </body>
 
 </html>
