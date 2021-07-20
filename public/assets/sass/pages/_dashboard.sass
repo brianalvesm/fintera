@@ -1,0 +1,56 @@
+// Dashboard
+.dashboard
+	background:
+		image: url('../media/bg/dashboard-bg-1.jpg')
+		repeat: no-repeat
+		size: cover
+		position: center bottom
+
+	.btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled),
+	.btn.btn-clean:focus:not(.btn-text),
+	.btn.btn-clean.focus:not(.btn-text)
+		color: white
+		background-color: rgba($color-primary-light, 0.2)
+		i
+			color: white
+
+	.brand
+		padding: 0
+		height: initial
+
+	.logo
+		max-height: 20px
+
+	.topbar
+		position: relative
+		box-shadow: unset
+		padding: 0
+		i
+			color: white
+
+	.author
+		color: rgba(255, 255, 255, 0.5)
+
+	.symbol.symbol-light .symbol-label
+		background-color: $color-primary-light
+		i
+			color: $color-primary
+
+	.card-engage
+		&--consultants
+			background:
+				image: url('../media/promo-woman-smiling-crop.jpg')
+				repeat: no-repeat
+				size: cover
+			p
+				color: rgba(68, 68, 68, 0.7)
+			a, a span
+				color: #444
+			.svg-icon.svg-icon-primary svg g [fill]
+				fill: #444 !important
+
+@media (max-width: 991.98px)
+	.topbar
+		background-color: transparent
+	.brand
+		display: block

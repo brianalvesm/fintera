@@ -1,0 +1,21 @@
+// Components
+.btn
+  &.btn-primary
+    font-family: 'Poppins', sans-serif
+    color: #FFFFFF
+    background-color: $color-primary
+    border-color: $color-primary
+    text-decoration: none
+    &:hover:not(.btn-text):not(:disabled):not(.disabled),
+    &:focus:not(.btn-text),
+    &.focus:not(.btn-text)
+      background-color: $color-primary-dark
+      border-color: $color-primary-dark
+
+  &.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled),
+  &.btn-clean:focus:not(.btn-text),
+  &.btn-clean.focus:not(.btn-text)
+    color: $color-primary
+    background-color: $color-primary-light
+    i
+      color: $color-primary

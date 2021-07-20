@@ -1,0 +1,49 @@
+.login
+  a
+    color: $color-primary
+    &:hover
+      color: $color-primary-dark
+  
+  &.login-signup-on 
+    .content
+      background:
+        image: url('../media/bg/signup-bg-1.jpg')
+        repeat: no-repeat
+        size: cover
+        position: center right
+
+  &.login-verification
+    .content
+      background:
+        image: url('../media/bg/signup-bg-2.jpg')
+        repeat: no-repeat
+        size: cover
+        position: center right
+
+  &.login-has-account
+    .content
+      background:
+        image: url('../media/bg/signup-bg-3.jpg')
+        repeat: no-repeat
+        size: cover
+        position: center
+
+  &.login-confirmation
+    .content
+      background:
+        image: url('../media/bg/signup-bg-4.jpg')
+        repeat: no-repeat
+        size: cover
+        position: center
+
+  &.login-forgot-on
+    .content
+      background:
+        image: url('../media/bg/jellyfish.jpg')
+        repeat: no-repeat
+        size: cover
+        position: center
+
+  .content
+    @media (max-width: 991.98px)
+      padding: 0
