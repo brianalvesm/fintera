@@ -250,6 +250,28 @@
   max-width: 22px;
 }
 
+.symbol.symbol-light-primary .symbol-label {
+  overflow: hidden;
+}
+
 .svg-icon.svg-icon-primary svg g [fill] {
   fill: #FF69B4 !important;
+}
+
+.symbol.symbol-primary .symbol-label {
+  background-color: #FF69B4;
+}
+
+.separator.separator-solid {
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.text-muted {
+  color: #aaa !important;
+}
+
+@media (max-width: 575.98px) {
+  .account-nav-user-email {
+    font-size: 90%;
+  }
 }
