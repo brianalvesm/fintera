@@ -16,6 +16,8 @@
   @media (max-width: 575.98px)
     max-width: 135px
 
+// OVERWRITES
+
 .alert.alert-custom .alert-text
   width: min-content
 
@@ -27,5 +29,21 @@
   img
     max-width: 22px
 
+.symbol.symbol-light-primary .symbol-label
+  overflow: hidden
+
 .svg-icon.svg-icon-primary svg g [fill]
   fill: $color-primary !important
+
+.symbol.symbol-primary .symbol-label
+  background-color: $color-primary
+
+.separator.separator-solid
+  border-bottom: 1px solid #EEEEEE
+
+.text-muted
+  color: #aaa !important
+
+.account-nav-user-email
+  @media (max-width: 575.98px)
+    font-size: 90%
