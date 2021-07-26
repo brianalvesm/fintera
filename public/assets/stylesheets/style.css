@@ -183,17 +183,8 @@
 .dashboard .btn.btn-clean.focus:not(.btn-text) i {
   color: white;
 }
-.dashboard .brand {
-  padding: 0;
-  height: initial;
-}
-.dashboard .logo {
-  max-height: 20px;
-}
-.dashboard .topbar {
-  position: relative;
-  box-shadow: unset;
-  padding: 0;
+.dashboard .header {
+  background-color: transparent;
 }
 .dashboard .topbar i {
   color: white;
@@ -222,18 +213,46 @@
   fill: #444 !important;
 }
 
-@media (max-width: 991.98px) {
-  .topbar {
-    background-color: transparent;
-  }
-
-  .brand {
-    display: block;
-  }
-}
 @media (max-width: 575.98px) {
   .logo {
     max-width: 135px;
+  }
+}
+
+.header {
+  background-color: white;
+}
+.header .logo {
+  max-height: 20px;
+}
+
+.brand {
+  padding: 0;
+  height: initial;
+}
+@media (max-width: 991.98px) {
+  .brand {
+    padding: 0;
+    display: block;
+  }
+}
+
+.brand-logo span {
+  position: relative;
+  top: 2px;
+}
+
+.topbar {
+  position: relative;
+  box-shadow: unset;
+  padding: 0;
+}
+@media (max-width: 991.98px) {
+  .topbar {
+    position: relative;
+    box-shadow: unset;
+    padding: 0;
+    background-color: transparent;
   }
 }
 

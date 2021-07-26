@@ -12,12 +12,38 @@
 @import "pages/welcome"
 @import "pages/dashboard"
 
+// Header
 .logo
   @media (max-width: 575.98px)
     max-width: 135px
 
-// OVERWRITES
+.header
+  background-color: white
+  .logo
+    max-height: 20px
 
+.brand
+  padding: 0
+  height: initial
+  @media (max-width: 991.98px)
+    padding: 0
+    display: block
+
+.brand-logo span
+  position: relative
+  top: 2px
+
+.topbar
+  position: relative
+  box-shadow: unset
+  padding: 0
+  @media (max-width: 991.98px)
+    position: relative
+    box-shadow: unset
+    padding: 0
+    background-color: transparent
+
+// OVERWRITES
 .alert.alert-custom .alert-text
   width: min-content
 
