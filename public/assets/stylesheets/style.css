@@ -77,6 +77,10 @@
   color: #FF69B4;
 }
 
+.header .topbar {
+  flex-basis: 100%;
+}
+
 .symbol.symbol-light-primary .symbol-label {
   background-color: rgba(77, 89, 149, 0.06);
   color: #3699FF;
