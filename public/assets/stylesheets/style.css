@@ -8,6 +8,10 @@
   color: #999 !important;
 }
 
+.lighter-gray {
+  color: rgba(170, 170, 170, 0.5);
+}
+
 .color-primary {
   color: #FF69B4;
 }
@@ -29,7 +33,6 @@
 }
 .btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled), .btn.btn-clean:focus:not(.btn-text), .btn.btn-clean.focus:not(.btn-text) {
   color: #FF69B4;
-  background-color: #ffe9f4;
 }
 .btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled) i, .btn.btn-clean:focus:not(.btn-text) i, .btn.btn-clean.focus:not(.btn-text) i {
   color: #FF69B4;
@@ -45,17 +48,52 @@
 }
 
 .topbar-item .dropdown-menu a,
-.topbar-item .dropdown-menu span {
+.topbar-item .dropdown-menu span,
+.header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav > .menu-item > .menu-link {
   width: max-content;
 }
 
-.header .header-menu .menu-nav > .menu-item > .menu-link .menu-text {
+.header-menu .menu-nav > .menu-item .menu-submenu {
+  width: initial;
+}
+
+.header .header-menu .menu-nav > .menu-item > .menu-link .menu-text,
+.header .header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav > .menu-item > .menu-link .menu-text {
   color: #999;
 }
 
 .header .header-menu .menu-nav > .menu-item:hover:not(.menu-item-here):not(.menu-item-active) > .menu-link .menu-text,
 .header .header-menu .menu-nav > .menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link .menu-text {
   color: #FF69B4;
+}
+
+.header-menu .menu-nav > .menu-item:hover:not(.menu-item-here):not(.menu-item-active) > .menu-link > .menu-arrow,
+.header-menu .menu-nav > .menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link > .menu-arrow {
+  color: #FF69B4;
+}
+
+.header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav > .menu-item:hover:not(.menu-item-here):not(.menu-item-active) > .menu-link .menu-text,
+.header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav > .menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link .menu-text {
+  color: #FF69B4;
+}
+
+.symbol.symbol-light-primary .symbol-label {
+  background-color: rgba(77, 89, 149, 0.06);
+  color: #3699FF;
+}
+
+.header-menu .menu-nav > .menu-item > .menu-link > .menu-arrow {
+  display: flex;
+}
+
+.module-active a.light-gray,
+.module-active a,
+.module-active i,
+.module-active span {
+  color: #FF69B4 !important;
+}
+.module-active .symbol.symbol-light-primary .symbol-label {
+  background-color: #FBECF5;
 }
 
 .login a {
@@ -190,7 +228,7 @@
 .dashboard .btn.btn-clean:focus:not(.btn-text),
 .dashboard .btn.btn-clean.focus:not(.btn-text) {
   color: white;
-  background-color: rgba(255, 233, 244, 0.2);
+  background-color: rgba(251, 236, 245, 0.2);
 }
 .dashboard .btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled) i,
 .dashboard .btn.btn-clean:focus:not(.btn-text) i,
@@ -207,7 +245,7 @@
   color: rgba(255, 255, 255, 0.5);
 }
 .dashboard .symbol.symbol-light .symbol-label {
-  background-color: #ffe9f4;
+  background-color: #FBECF5;
 }
 .dashboard .symbol.symbol-light .symbol-label i {
   color: #FF69B4;

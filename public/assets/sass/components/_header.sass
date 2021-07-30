@@ -1,11 +1,48 @@
 // Header
 .topbar-item .dropdown-menu a,
-.topbar-item .dropdown-menu span
+.topbar-item .dropdown-menu span,
+.header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav > .menu-item > .menu-link
 	width: max-content
 
-.header .header-menu .menu-nav > .menu-item > .menu-link .menu-text
+.header-menu .menu-nav > .menu-item .menu-submenu
+	width: initial
+
+.header .header-menu .menu-nav > .menu-item > .menu-link .menu-text,
+.header .header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav > .menu-item > .menu-link .menu-text
 	color: $light-gray
 
-.header .header-menu .menu-nav > .menu-item:hover:not(.menu-item-here):not(.menu-item-active) > .menu-link .menu-text,
-.header .header-menu .menu-nav > .menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link .menu-text
-	color: $color-primary
+.header .header-menu .menu-nav >
+	.menu-item:hover:not(.menu-item-here):not(.menu-item-active)					 > .menu-link .menu-text,
+	.menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link .menu-text
+		color: $color-primary
+
+.header-menu .menu-nav >
+	.menu-item:hover:not(.menu-item-here):not(.menu-item-active) 				   > .menu-link > .menu-arrow,
+	.menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link > .menu-arrow
+		color: $color-primary
+
+.header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav >
+	.menu-item:hover:not(.menu-item-here):not(.menu-item-active) 					 > .menu-link .menu-text,
+	.menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link .menu-text
+		color: $color-primary
+
+// .header .header-menu .menu-nav > .menu-item:hover:not(.menu-item-here):not(.menu-item-active) > .menu-link,
+// .header .header-menu .menu-nav > .menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link
+// 	background-color: $color-primary-light
+
+.symbol.symbol-light-primary .symbol-label
+	background-color: rgba(77, 89, 149, 0.06)
+	color: #3699FF
+
+.header-menu .menu-nav > .menu-item > .menu-link > .menu-arrow
+	display: flex
+
+.module-active
+	a.light-gray,
+	a,
+	i,
+	span
+		color: $color-primary !important
+
+	.symbol.symbol-light-primary .symbol-label
+		background-color: $color-primary-light
