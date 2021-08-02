@@ -29,10 +29,11 @@
 		padding: 0
 		background-color: transparent
 
-.topbar-item .dropdown-menu a,
-.topbar-item .dropdown-menu span,
-.header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav > .menu-item > .menu-link
-	width: max-content
+@media (min-width: 991.98px)
+	.topbar-item .dropdown-menu a,
+	.topbar-item .dropdown-menu span,
+	.header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav > .menu-item > .menu-link
+		width: max-content
 
 .header-menu .menu-nav > .menu-item .menu-submenu
 	width: initial
@@ -69,6 +70,10 @@
 	.menu-text,
 	.menu-arrow
 		color: $color-primary
+
+.header-menu-mobile .menu-nav > .menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-heading .menu-text,
+.header-menu-mobile .menu-nav > .menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-link .menu-text
+	color: $color-primary
 
 // .header .header-menu .menu-nav > .menu-item:hover:not(.menu-item-here):not(.menu-item-active) > .menu-link,
 // .header .header-menu .menu-nav > .menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link
