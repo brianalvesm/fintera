@@ -121,6 +121,21 @@
   color: #FF69B4;
 }
 
+.header-menu-mobile .menu-nav > .menu-item.menu-item-open > .menu-heading .menu-arrow,
+.header-menu-mobile .menu-nav > .menu-item.menu-item-open > .menu-link .menu-arrow {
+  color: #FF69B4;
+}
+
+.header-menu-mobile .menu-nav > .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-heading .menu-text,
+.header-menu-mobile .menu-nav > .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-heading .menu-arrow {
+  color: #FF69B4;
+}
+
+.header-menu-mobile .menu-nav > .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-link .menu-text,
+.header-menu-mobile .menu-nav > .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-link .menu-arrow {
+  color: #FF69B4;
+}
+
 .header .topbar {
   flex-basis: 100%;
 }
