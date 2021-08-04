@@ -1,4 +1,8 @@
 // Header
+.header-menu-wrapper
+	height: -webkit-fill-available
+	min-height: 100%
+
 .logo
 	@media (max-width: 575.98px)
 		max-width: 135px
@@ -78,6 +82,15 @@
 // .header .header-menu .menu-nav > .menu-item:hover:not(.menu-item-here):not(.menu-item-active) > .menu-link,
 // .header .header-menu .menu-nav > .menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link
 // 	background-color: $color-primary-light
+
+.header .header-menu .menu-nav > .menu-item.menu-item-here > .menu-link .menu-text,
+.header .header-menu .menu-nav > .menu-item.menu-item-active > .menu-link .menu-text
+	color: $color-primary
+
+.header-menu.header-menu-layout-tab .menu-nav > .menu-item.menu-item-here > .menu-link,
+.header-menu.header-menu-layout-tab .menu-nav > .menu-item.menu-item-active > .menu-link
+	background-color: transparent !important
+	border-bottom: 2px solid $color-primary !important
 
 .header .topbar
 	flex-basis: 100%

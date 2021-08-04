@@ -47,6 +47,11 @@
   border-color: #FF69B4;
 }
 
+.header-menu-wrapper {
+  height: -webkit-fill-available;
+  min-height: 100%;
+}
+
 @media (max-width: 575.98px) {
   .logo {
     max-width: 135px;
@@ -140,6 +145,17 @@
 .header-menu-mobile .menu-nav > .menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-heading .menu-text,
 .header-menu-mobile .menu-nav > .menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-link .menu-text {
   color: #FF69B4;
+}
+
+.header .header-menu .menu-nav > .menu-item.menu-item-here > .menu-link .menu-text,
+.header .header-menu .menu-nav > .menu-item.menu-item-active > .menu-link .menu-text {
+  color: #FF69B4;
+}
+
+.header-menu.header-menu-layout-tab .menu-nav > .menu-item.menu-item-here > .menu-link,
+.header-menu.header-menu-layout-tab .menu-nav > .menu-item.menu-item-active > .menu-link {
+  background-color: transparent !important;
+  border-bottom: 2px solid #FF69B4 !important;
 }
 
 .header .topbar {
