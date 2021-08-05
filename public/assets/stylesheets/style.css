@@ -324,6 +324,9 @@
 .dashboard .header {
   background-color: transparent;
 }
+.dashboard .header .topbar {
+  background-color: transparent;
+}
 .dashboard .topbar i {
   color: white;
 }
