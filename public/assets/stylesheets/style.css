@@ -38,6 +38,15 @@
   color: #FF69B4;
 }
 
+.form-group,
+.form-group label {
+  color: #999;
+}
+
+.form-control:focus {
+  border-color: #FF69B4;
+}
+
 .header-menu-wrapper {
   height: -webkit-fill-available;
   min-height: 100%;
@@ -171,6 +180,175 @@
 }
 .module-active .symbol.symbol-light-primary .symbol-label {
   background-color: #FBECF5;
+}
+
+.login a {
+  color: #FF69B4;
+}
+.login a:hover {
+  color: #ff2190;
+}
+.login.login-signin-on {
+  background-image: url("../media/bg/signin-bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+@media (max-width: 575.98px) {
+  .login.login-signin-on {
+    background-position: center left;
+  }
+}
+.login .aside-container,
+.login .signin-signup-container {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .login .aside-container,
+.login .signin-signup-container {
+    max-width: 400px;
+  }
+}
+@media (max-width: 575.98px) {
+  .login .aside-container,
+.login .signin-signup-container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .login .login-aside {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+.login a {
+  color: #FF69B4;
+}
+.login a:hover {
+  color: #ff2190;
+}
+.login.login-signup-on .content {
+  background-image: url("../media/bg/signup-bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+.login.login-verification .content {
+  background-image: url("../media/bg/signup-bg-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+.login.login-has-account .content {
+  background-image: url("../media/bg/signup-bg-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.login.login-confirmation .content {
+  background-image: url("../media/bg/signup-bg-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.login.login-forgot-on .content {
+  background-image: url("../media/bg/jellyfish.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 991.98px) {
+  .login .content {
+    padding: 0;
+  }
+}
+
+.welcome a {
+  color: #FF69B4;
+}
+.welcome a:hover {
+  color: #ff2190;
+}
+.welcome .content {
+  background-image: url("../media/bg/pink-umbrellas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+@media (max-width: 991.98px) {
+  .welcome .content {
+    padding: 0;
+  }
+}
+.welcome .aside-container,
+.welcome .signin-signup-container {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .welcome .aside-container,
+.welcome .signin-signup-container {
+    max-width: 400px;
+  }
+}
+@media (max-width: 575.98px) {
+  .welcome .aside-container,
+.welcome .signin-signup-container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .welcome .login-aside {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+.dashboard {
+  background-image: url("../media/bg/dashboard-bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+.dashboard .btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled),
+.dashboard .btn.btn-clean:focus:not(.btn-text),
+.dashboard .btn.btn-clean.focus:not(.btn-text) {
+  color: white;
+  background-color: rgba(251, 236, 245, 0.2);
+}
+.dashboard .btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled) i,
+.dashboard .btn.btn-clean:focus:not(.btn-text) i,
+.dashboard .btn.btn-clean.focus:not(.btn-text) i {
+  color: white;
+}
+.dashboard .header {
+  background-color: transparent;
+}
+.dashboard .topbar i {
+  color: white;
+}
+.dashboard .author {
+  color: rgba(255, 255, 255, 0.5);
+}
+.dashboard .symbol.symbol-light .symbol-label {
+  background-color: #FBECF5;
+}
+.dashboard .symbol.symbol-light .symbol-label i {
+  color: #FF69B4;
+}
+.dashboard .card-engage--consultants {
+  background-image: url("../media/promo-woman-smiling-crop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dashboard .card-engage--consultants p {
+  color: rgba(68, 68, 68, 0.7);
+}
+.dashboard .card-engage--consultants a, .dashboard .card-engage--consultants a span {
+  color: #444;
+}
+.dashboard .card-engage--consultants .svg-icon.svg-icon-primary svg g [fill] {
+  fill: #444 !important;
 }
 
 .alert.alert-custom .alert-text {
