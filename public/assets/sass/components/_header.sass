@@ -1,0 +1,115 @@
+// Header
+.header-menu-wrapper
+	height: -webkit-fill-available
+	min-height: 100%
+
+.logo
+	@media (max-width: 575.98px)
+		max-width: 135px
+
+.header
+	background-color: white
+	.logo
+		max-height: 20px
+	.topbar
+		background-color: white
+
+.brand
+	padding: 0
+	@media (max-width: 991.98px)
+		padding: 0
+
+.logo + span
+	position: relative
+	top: 1px
+
+.topbar
+	position: relative
+	box-shadow: unset
+	padding: 0
+	@media (max-width: 991.98px)
+		position: relative
+		box-shadow: unset
+		padding: 0
+		background-color: transparent
+
+@media (min-width: 991.98px)
+	.topbar-item .dropdown-menu a,
+	.topbar-item .dropdown-menu span,
+	.header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav > .menu-item > .menu-link
+		width: max-content
+	
+@media (max-width: 991.98px)
+	.header-menu-mobile .menu-nav > .menu-item.menu-item-open > .menu-heading .menu-arrow,
+	.header-menu-mobile .menu-nav > .menu-item.menu-item-open > .menu-link .menu-arrow
+		color: $color-primary
+
+.header-menu .menu-nav > .menu-item .menu-submenu
+	width: initial
+
+.header .header-menu .menu-nav > .menu-item > .menu-link .menu-text,
+.header .header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav > .menu-item > .menu-link .menu-text
+	color: $light-gray
+
+.header .header-menu .menu-nav >
+	.menu-item:hover:not(.menu-item-here):not(.menu-item-active)					 > .menu-link .menu-text,
+	.menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link .menu-text
+		color: $color-primary
+
+.header-menu .menu-nav >
+	.menu-item:hover:not(.menu-item-here):not(.menu-item-active) 				   > .menu-link > .menu-arrow,
+	.menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link > .menu-arrow
+		color: $color-primary
+
+.header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav >
+	.menu-item:hover:not(.menu-item-here):not(.menu-item-active) 					 > .menu-link .menu-text,
+	.menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link .menu-text
+		color: $color-primary
+
+
+.header-menu-mobile .menu-nav > .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-heading
+	.menu-text,
+	.menu-arrow
+		color: $color-primary
+
+.header-menu-mobile .menu-nav > .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-link
+	.menu-text,
+	.menu-arrow
+		color: $color-primary
+
+.header-menu-mobile .menu-nav > .menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-heading .menu-text,
+.header-menu-mobile .menu-nav > .menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-link .menu-text
+	color: $color-primary
+
+// .header .header-menu .menu-nav > .menu-item:hover:not(.menu-item-here):not(.menu-item-active) > .menu-link,
+// .header .header-menu .menu-nav > .menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link
+// 	background-color: $color-primary-light
+
+.header .header-menu .menu-nav > .menu-item.menu-item-here > .menu-link .menu-text,
+.header .header-menu .menu-nav > .menu-item.menu-item-active > .menu-link .menu-text
+	color: $color-primary
+
+.header-menu.header-menu-layout-tab .menu-nav > .menu-item.menu-item-here > .menu-link,
+.header-menu.header-menu-layout-tab .menu-nav > .menu-item.menu-item-active > .menu-link
+	background-color: transparent !important
+	border-bottom: 2px solid $color-primary !important
+
+.header .topbar
+	flex-basis: 100%
+
+.symbol.symbol-light-primary .symbol-label
+	background-color: rgba(77, 89, 149, 0.06)
+	color: #3699FF
+
+.header-menu .menu-nav > .menu-item > .menu-link > .menu-arrow
+	display: flex
+
+.module-active
+	a.light-gray,
+	a,
+	i,
+	span
+		color: $color-primary !important
+
+	.symbol.symbol-light-primary .symbol-label
+		background-color: $color-primary-light

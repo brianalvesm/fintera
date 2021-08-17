@@ -8,6 +8,10 @@
   color: #999 !important;
 }
 
+.lighter-gray {
+  color: rgba(170, 170, 170, 0.5);
+}
+
 .color-primary {
   color: #FF69B4;
 }
@@ -29,7 +33,6 @@
 }
 .btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled), .btn.btn-clean:focus:not(.btn-text), .btn.btn-clean.focus:not(.btn-text) {
   color: #FF69B4;
-  background-color: #ffe9f4;
 }
 .btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled) i, .btn.btn-clean:focus:not(.btn-text) i, .btn.btn-clean.focus:not(.btn-text) i {
   color: #FF69B4;
@@ -42,6 +45,141 @@
 
 .form-control:focus {
   border-color: #FF69B4;
+}
+
+.header-menu-wrapper {
+  height: -webkit-fill-available;
+  min-height: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .logo {
+    max-width: 135px;
+  }
+}
+
+.header {
+  background-color: white;
+}
+.header .logo {
+  max-height: 20px;
+}
+.header .topbar {
+  background-color: white;
+}
+
+.brand {
+  padding: 0;
+}
+@media (max-width: 991.98px) {
+  .brand {
+    padding: 0;
+  }
+}
+
+.logo + span {
+  position: relative;
+  top: 1px;
+}
+
+.topbar {
+  position: relative;
+  box-shadow: unset;
+  padding: 0;
+}
+@media (max-width: 991.98px) {
+  .topbar {
+    position: relative;
+    box-shadow: unset;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .topbar-item .dropdown-menu a,
+.topbar-item .dropdown-menu span,
+.header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav > .menu-item > .menu-link {
+    width: max-content;
+  }
+}
+@media (max-width: 991.98px) {
+  .header-menu-mobile .menu-nav > .menu-item.menu-item-open > .menu-heading .menu-arrow,
+.header-menu-mobile .menu-nav > .menu-item.menu-item-open > .menu-link .menu-arrow {
+    color: #FF69B4;
+  }
+}
+.header-menu .menu-nav > .menu-item .menu-submenu {
+  width: initial;
+}
+
+.header .header-menu .menu-nav > .menu-item > .menu-link .menu-text,
+.header .header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav > .menu-item > .menu-link .menu-text {
+  color: #999;
+}
+
+.header .header-menu .menu-nav > .menu-item:hover:not(.menu-item-here):not(.menu-item-active) > .menu-link .menu-text,
+.header .header-menu .menu-nav > .menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link .menu-text {
+  color: #FF69B4;
+}
+
+.header-menu .menu-nav > .menu-item:hover:not(.menu-item-here):not(.menu-item-active) > .menu-link > .menu-arrow,
+.header-menu .menu-nav > .menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link > .menu-arrow {
+  color: #FF69B4;
+}
+
+.header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav > .menu-item:hover:not(.menu-item-here):not(.menu-item-active) > .menu-link .menu-text,
+.header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav > .menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active) > .menu-link .menu-text {
+  color: #FF69B4;
+}
+
+.header-menu-mobile .menu-nav > .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-heading .menu-text,
+.header-menu-mobile .menu-nav > .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-heading .menu-arrow {
+  color: #FF69B4;
+}
+
+.header-menu-mobile .menu-nav > .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-link .menu-text,
+.header-menu-mobile .menu-nav > .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-link .menu-arrow {
+  color: #FF69B4;
+}
+
+.header-menu-mobile .menu-nav > .menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-heading .menu-text,
+.header-menu-mobile .menu-nav > .menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover > .menu-link .menu-text {
+  color: #FF69B4;
+}
+
+.header .header-menu .menu-nav > .menu-item.menu-item-here > .menu-link .menu-text,
+.header .header-menu .menu-nav > .menu-item.menu-item-active > .menu-link .menu-text {
+  color: #FF69B4;
+}
+
+.header-menu.header-menu-layout-tab .menu-nav > .menu-item.menu-item-here > .menu-link,
+.header-menu.header-menu-layout-tab .menu-nav > .menu-item.menu-item-active > .menu-link {
+  background-color: transparent !important;
+  border-bottom: 2px solid #FF69B4 !important;
+}
+
+.header .topbar {
+  flex-basis: 100%;
+}
+
+.symbol.symbol-light-primary .symbol-label {
+  background-color: rgba(77, 89, 149, 0.06);
+  color: #3699FF;
+}
+
+.header-menu .menu-nav > .menu-item > .menu-link > .menu-arrow {
+  display: flex;
+}
+
+.module-active a.light-gray,
+.module-active a,
+.module-active i,
+.module-active span {
+  color: #FF69B4 !important;
+}
+.module-active .symbol.symbol-light-primary .symbol-label {
+  background-color: #FBECF5;
 }
 
 .login a {
@@ -176,24 +314,18 @@
 .dashboard .btn.btn-clean:focus:not(.btn-text),
 .dashboard .btn.btn-clean.focus:not(.btn-text) {
   color: white;
-  background-color: rgba(255, 233, 244, 0.2);
+  background-color: rgba(251, 236, 245, 0.2);
 }
 .dashboard .btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled) i,
 .dashboard .btn.btn-clean:focus:not(.btn-text) i,
 .dashboard .btn.btn-clean.focus:not(.btn-text) i {
   color: white;
 }
-.dashboard .brand {
-  padding: 0;
-  height: initial;
+.dashboard .header {
+  background-color: transparent;
 }
-.dashboard .logo {
-  max-height: 20px;
-}
-.dashboard .topbar {
-  position: relative;
-  box-shadow: unset;
-  padding: 0;
+.dashboard .header .topbar {
+  background-color: transparent;
 }
 .dashboard .topbar i {
   color: white;
@@ -202,7 +334,7 @@
   color: rgba(255, 255, 255, 0.5);
 }
 .dashboard .symbol.symbol-light .symbol-label {
-  background-color: #ffe9f4;
+  background-color: #FBECF5;
 }
 .dashboard .symbol.symbol-light .symbol-label i {
   color: #FF69B4;
@@ -220,21 +352,6 @@
 }
 .dashboard .card-engage--consultants .svg-icon.svg-icon-primary svg g [fill] {
   fill: #444 !important;
-}
-
-@media (max-width: 991.98px) {
-  .topbar {
-    background-color: transparent;
-  }
-
-  .brand {
-    display: block;
-  }
-}
-@media (max-width: 575.98px) {
-  .logo {
-    max-width: 135px;
-  }
 }
 
 .alert.alert-custom .alert-text {
