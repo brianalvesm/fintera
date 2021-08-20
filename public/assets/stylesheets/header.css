@@ -7588,6 +7588,7 @@ body {
 .logo + span {
   position: relative;
   top: 1px;
+  letter-spacing: -1px;
 }
 
 .topbar {
