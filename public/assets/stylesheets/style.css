@@ -184,10 +184,11 @@
 }
 
 .login a {
-  color: #FF69B4;
+  color: inherit;
+  text-decoration: underline;
 }
-.login a:hover {
-  color: #ff2190;
+.login .btn.btn-outline-secondary {
+  text-decoration: none;
 }
 .login.login-signin-on {
   background-image: url("../media/bg/signin-bg-1.jpg");
@@ -223,12 +224,6 @@
   }
 }
 
-.login a {
-  color: #FF69B4;
-}
-.login a:hover {
-  color: #ff2190;
-}
 .login.login-signup-on .content {
   background-image: url("../media/bg/signup-bg-1.jpg");
   background-repeat: no-repeat;
@@ -263,6 +258,9 @@
   .login .content {
     padding: 0;
   }
+}
+.login .logo {
+  max-width: 200px;
 }
 
 .welcome a {
