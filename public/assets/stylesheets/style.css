@@ -354,7 +354,7 @@
 }
 
 .profile-selection {
-  max-width: 235px;
+  max-width: 245px;
 }
 .profile-selection .scroll {
   max-height: 180px;
@@ -394,6 +394,16 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00ffffff", endColorstr="#ffffff",GradientType=0 );
 }
 .profile-selection a {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.profile-selected {
+  display: inline-flex;
+  max-width: 400px;
+}
+.profile-selected a {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
