@@ -353,6 +353,73 @@
   fill: #444 !important;
 }
 
+.profile-selection {
+  max-width: 245px;
+}
+.profile-selection .scroll {
+  max-height: 180px;
+  overflow-y: auto;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.profile-selection .scroll::-webkit-scrollbar {
+  width: 5px;
+}
+.profile-selection .scroll::-webkit-scrollbar-track {
+  background: #fff;
+}
+.profile-selection .scroll::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+.profile-selection .scroll::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+.profile-selection .list-fade-out {
+  position: relative;
+}
+.profile-selection .list-fade-out:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  height: 45px;
+  width: 100%;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 50%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 50%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00ffffff", endColorstr="#ffffff",GradientType=0 );
+}
+.profile-selection a {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.profile-selected {
+  display: inline-flex;
+  max-width: 400px;
+}
+.profile-selected a {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: inherit;
+}
+a:hover, a:active, a:focus {
+  color: inherit;
+}
+a.underline {
+  text-decoration: underline;
+}
+
 .alert.alert-custom .alert-text {
   width: min-content;
 }

@@ -83146,11 +83146,11 @@ router-outlet {
   display: none;
 }
 
-a:hover,
+/*a:hover,
 a:active,
 a:focus {
   text-decoration: none !important;
-}
+}*/
 
 canvas {
   -moz-user-select: none;
