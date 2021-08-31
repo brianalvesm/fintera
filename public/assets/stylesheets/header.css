@@ -7474,6 +7474,9 @@ canvas {
 .btn.btn-clean:not(:disabled):not(.disabled):active:not(.btn-text).dropdown-toggle:after, .btn.btn-clean:not(:disabled):not(.disabled).active.dropdown-toggle:after, .show > .btn.btn-clean.dropdown-toggle.dropdown-toggle:after, .show .btn.btn-clean.btn-dropdown.dropdown-toggle:after {
   color: #3699FF;
 }
+.btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled) svg path, .btn.btn-clean:focus:not(.btn-text) svg path, .btn.btn-clean.focus:not(.btn-text) svg path {
+  stroke: #FF69B4;
+}
 
 .scroll {
   position: relative;

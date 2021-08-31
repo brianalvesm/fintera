@@ -37,6 +37,9 @@
 .btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled) i, .btn.btn-clean:focus:not(.btn-text) i, .btn.btn-clean.focus:not(.btn-text) i {
   color: #FF69B4;
 }
+.btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled) svg path, .btn.btn-clean:focus:not(.btn-text) svg path, .btn.btn-clean.focus:not(.btn-text) svg path {
+  stroke: #FF69B4;
+}
 
 .form-group,
 .form-group label {
