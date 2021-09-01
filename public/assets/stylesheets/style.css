@@ -102,6 +102,7 @@
 
 @media (min-width: 991.98px) {
   .topbar-item .dropdown-menu a,
+.topbar-item .dropdown-menu span,
 .header-menu .menu-nav > .menu-item .menu-submenu > .menu-subnav > .menu-item > .menu-link {
     width: max-content;
   }
