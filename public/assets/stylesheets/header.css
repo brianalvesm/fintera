@@ -5589,10 +5589,6 @@ fieldset:disabled a.btn {
   align-items: stretch;
 }
 
-.topbar-item .dropdown-menu span {
-  max-width: 175px;
-}
-
 @media (max-width: 991.98px) {
   .topbar {
     position: absolute;
@@ -7689,14 +7685,23 @@ body {
   display: flex;
 }
 
+.navi.navi-hover .navi-item .navi-link:active a.light-gray,
+.navi.navi-hover .navi-item .navi-link:active a,
+.navi.navi-hover .navi-item .navi-link:active i,
+.navi.navi-hover .navi-item .navi-link:active span,
 .module-active a.light-gray,
 .module-active a,
 .module-active i,
 .module-active span {
   color: #FF69B4 !important;
 }
+.navi.navi-hover .navi-item .navi-link:active .symbol.symbol-light-primary .symbol-label,
 .module-active .symbol.symbol-light-primary .symbol-label {
   background-color: #FBECF5;
+}
+
+.menu-account .navi {
+  padding: 0;
 }
 
 .alert.alert-custom .alert-text {
