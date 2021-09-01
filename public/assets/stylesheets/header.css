@@ -5589,6 +5589,10 @@ fieldset:disabled a.btn {
   align-items: stretch;
 }
 
+.topbar-item .dropdown-menu span {
+  max-width: 175px;
+}
+
 @media (max-width: 991.98px) {
   .topbar {
     position: absolute;
