@@ -1,15 +1,16 @@
-.welcome
+// Assinaturas
+.signatures
   a
     color: $color-primary
     &:hover
       color: $color-primary-dark
 
   .logo
-    width: 200px
+    width: 150px
   
-  .content
+  .login-aside
     background:
-      image: url('../media/bg/pink-umbrellas.jpg')
+      image: url('../media/bg/signup-bg-4.jpg')
       repeat: no-repeat
       size: cover
       position: top center
@@ -17,11 +18,11 @@
       padding: 0
 
   .aside-container,
-  .signin-signup-container
+  .content-container
     width: 100%
     // Desktop & Tablet view
     @media (min-width: 576px)
-      max-width: 400px
+      max-width: 650px
     
     // Mobile mode
     @media (max-width: 575.98px)
@@ -32,3 +33,11 @@
     @media (min-width: 992px)
       width: 100%
       max-width: 600px
+
+  .snippet-preview
+    border: 1px solid #f1f1f1
+    border-radius: 6px
+    margin: 10px 0
+
+  .email-signature-fields
+    margin-bottom: 40px 
