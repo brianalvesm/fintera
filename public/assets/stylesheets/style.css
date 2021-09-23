@@ -471,6 +471,7 @@
   border: 1px solid #f1f1f1;
   border-radius: 6px;
   margin: 10px 0;
+  overflow: auto;
 }
 .signatures .email-signature-fields {
   margin-bottom: 40px;
