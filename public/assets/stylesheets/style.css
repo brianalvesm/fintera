@@ -476,6 +476,11 @@
   display: inline-block;
   width: 600px;
 }
+@media (max-width: 640px) {
+  .signatures .snippet-preview {
+    width: 100%;
+  }
+}
 .signatures .email-signature-fields {
   margin-bottom: 40px;
 }
