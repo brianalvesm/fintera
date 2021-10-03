@@ -539,6 +539,9 @@
   color: #A6E22D;
   margin-top: 30px;
 }
+.guidelines .code-preview .green:first-child {
+  margin-top: 0;
+}
 .guidelines .code-preview .blue {
   color: #60D8EF;
 }
@@ -552,8 +555,10 @@
 .guidelines .code-preview div {
   display: block;
 }
-.guidelines.signatures .login-aside {
-  background-image: url("../media/bg/signup-bg-4.jpg");
+.guidelines--page .login-aside {
+  background-image: url("../media/bg/pattern-circles-light.png");
+  background-repeat: repeat;
+  background-size: auto;
 }
 
 a {
