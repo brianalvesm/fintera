@@ -1,0 +1,103 @@
+// Guidelines
+.guidelines
+  a
+    color: $color-primary
+    &:hover
+      color: $color-primary-dark
+  p
+    margin-bottom: 0
+  .logo-module
+    height: 40px
+  .title
+    font-weight: bold
+  .nav-list a
+    display: block
+    font-size: 24px
+    margin-bottom: 25px
+
+  .login-aside
+    background:
+      image: url('../media/bg/vicko-mozara.jpg')
+      repeat: no-repeat
+      size: cover
+      position: top center
+    @media (max-width: 991.98px)
+      padding: 0
+    @media (min-width: 992px)
+      width: 100%
+      max-width: 600px
+
+  .aside-container,
+  .content-container
+    width: 100%
+    // Desktop & Tablet view
+    @media (min-width: 576px)
+      max-width: 650px
+    // Mobile mode
+    @media (max-width: 575.98px)
+      max-width: 100%
+
+  .snippet-preview
+    border: 1px solid #f1f1f1
+    border-radius: 6px
+    margin: 10px 0
+    padding: 15px 20px
+    overflow: auto
+    display: inline-block
+    width: 600px
+    @media (max-width: 640px)
+      width: 100%
+
+  .email-signature-fields
+    margin-bottom: 40px
+    width: 600px
+
+  .ux-preview
+    background-color: #eee
+    padding: 60px
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    border-radius: 6px
+
+  .card
+    max-width: 383.33px
+    height: 190px
+    .symbol.symbol-light .symbol-label
+      background-color: $color-primary-light
+      i
+        color: $color-primary
+    @include transition(400ms)
+    .card-title
+      color: #777
+    &:hover,
+    &:focus
+      cursor: pointer
+      box-shadow: 0 0 30px rgba(56, 101, 79, 0.1)
+      .card-title
+        color: #444
+
+  .code-preview
+    background-color: #282923
+    padding: 60px
+    border-radius: 6px
+    .green
+      color: #A6E22D
+      margin-top: 30px
+      &:first-child
+        margin-top: 0
+    .blue
+      color: #60D8EF
+    .red
+      color: #F9246A
+    .purple
+      color: #A476DA
+      margin-top: 30px
+    div
+      display: block
+
+  &--page .login-aside
+    background-image: url('../media/bg/pattern-circles-light.png')
+    background-repeat: repeat
+    background-size: auto

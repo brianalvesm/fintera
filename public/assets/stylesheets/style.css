@@ -425,49 +425,60 @@
   max-width: 300px;
 }
 
-.signatures a {
+.guidelines a {
   color: #FF69B4;
 }
-.signatures a:hover {
+.guidelines a:hover {
   color: #ff2190;
 }
-.signatures .logo {
-  width: 150px;
+.guidelines p {
+  margin-bottom: 0;
 }
-.signatures .login-aside {
-  background-image: url("../media/bg/signup-bg-4.jpg");
+.guidelines .logo-module {
+  height: 40px;
+}
+.guidelines .title {
+  font-weight: bold;
+}
+.guidelines .nav-list a {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.guidelines .login-aside {
+  background-image: url("../media/bg/vicko-mozara.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 }
 @media (max-width: 991.98px) {
-  .signatures .login-aside {
+  .guidelines .login-aside {
     padding: 0;
   }
 }
-.signatures .aside-container,
-.signatures .content-container {
-  width: 100%;
-}
-@media (min-width: 576px) {
-  .signatures .aside-container,
-.signatures .content-container {
-    max-width: 650px;
-  }
-}
-@media (max-width: 575.98px) {
-  .signatures .aside-container,
-.signatures .content-container {
-    max-width: 100%;
-  }
-}
 @media (min-width: 992px) {
-  .signatures .login-aside {
+  .guidelines .login-aside {
     width: 100%;
     max-width: 600px;
   }
 }
-.signatures .snippet-preview {
+.guidelines .aside-container,
+.guidelines .content-container {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .guidelines .aside-container,
+.guidelines .content-container {
+    max-width: 650px;
+  }
+}
+@media (max-width: 575.98px) {
+  .guidelines .aside-container,
+.guidelines .content-container {
+    max-width: 100%;
+  }
+}
+.guidelines .snippet-preview {
   border: 1px solid #f1f1f1;
   border-radius: 6px;
   margin: 10px 0;
@@ -477,13 +488,77 @@
   width: 600px;
 }
 @media (max-width: 640px) {
-  .signatures .snippet-preview {
+  .guidelines .snippet-preview {
     width: 100%;
   }
 }
-.signatures .email-signature-fields {
+.guidelines .email-signature-fields {
   margin-bottom: 40px;
   width: 600px;
+}
+.guidelines .ux-preview {
+  background-color: #eee;
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.guidelines .card {
+  max-width: 383.33px;
+  height: 190px;
+  -webkit-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.guidelines .card .symbol.symbol-light .symbol-label {
+  background-color: #FBECF5;
+}
+.guidelines .card .symbol.symbol-light .symbol-label i {
+  color: #FF69B4;
+}
+.guidelines .card .card-title {
+  color: #777;
+}
+.guidelines .card:hover, .guidelines .card:focus {
+  cursor: pointer;
+  box-shadow: 0 0 30px rgba(56, 101, 79, 0.1);
+}
+.guidelines .card:hover .card-title, .guidelines .card:focus .card-title {
+  color: #444;
+}
+.guidelines .code-preview {
+  background-color: #282923;
+  padding: 60px;
+  border-radius: 6px;
+}
+.guidelines .code-preview .green {
+  color: #A6E22D;
+  margin-top: 30px;
+}
+.guidelines .code-preview .green:first-child {
+  margin-top: 0;
+}
+.guidelines .code-preview .blue {
+  color: #60D8EF;
+}
+.guidelines .code-preview .red {
+  color: #F9246A;
+}
+.guidelines .code-preview .purple {
+  color: #A476DA;
+  margin-top: 30px;
+}
+.guidelines .code-preview div {
+  display: block;
+}
+.guidelines--page .login-aside {
+  background-image: url("../media/bg/pattern-circles-light.png");
+  background-repeat: repeat;
+  background-size: auto;
 }
 
 a {
@@ -493,7 +568,8 @@ a {
 a:hover, a:active, a:focus {
   color: inherit;
 }
-a.underline {
+
+.underline {
   text-decoration: underline;
 }
 
