@@ -82,8 +82,18 @@
       cursor: pointer
 
   .card
-    max-width: 383.33px
+    width: 383.33px
     height: 190px
+    border: none 
+    &.card--comercial
+      background-image: url('../media/promo-woman-smiling-crop.jpg')
+      background-size: cover
+      .card-title
+        color: #444
+      .card-description
+        color: rgba(68, 68, 68, 0.7)
+      .svg-icon.svg-icon-primary svg g [fill]
+        fill: #444 !important
     .symbol.symbol-light .symbol-label
       background-color: $color-primary-light
       i
@@ -114,6 +124,8 @@
     .purple
       color: #A476DA
       margin-top: 30px
+    .gray
+      color: #808080
     div
       display: block
 

@@ -528,13 +528,27 @@
   cursor: pointer;
 }
 .guidelines .card {
-  max-width: 383.33px;
+  width: 383.33px;
   height: 190px;
+  border: none;
   -webkit-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
   -ms-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
   -o-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.guidelines .card.card--comercial {
+  background-image: url("../media/promo-woman-smiling-crop.jpg");
+  background-size: cover;
+}
+.guidelines .card.card--comercial .card-title {
+  color: #444;
+}
+.guidelines .card.card--comercial .card-description {
+  color: rgba(68, 68, 68, 0.7);
+}
+.guidelines .card.card--comercial .svg-icon.svg-icon-primary svg g [fill] {
+  fill: #444 !important;
 }
 .guidelines .card .symbol.symbol-light .symbol-label {
   background-color: #FBECF5;
@@ -573,6 +587,9 @@
 .guidelines .code-preview .purple {
   color: #A476DA;
   margin-top: 30px;
+}
+.guidelines .code-preview .gray {
+  color: #808080;
 }
 .guidelines .code-preview div {
   display: block;
