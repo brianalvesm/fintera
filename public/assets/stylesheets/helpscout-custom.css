@@ -26,6 +26,10 @@ body {
 	background-position: center 70px;
 }
 
+.navbar .brand {
+	padding: 15px 0;
+}
+
 .navbar .brand img {
 	width: 112px;
 }
@@ -62,7 +66,7 @@ body {
 
 .collection-category h2 {
 	text-align: center;
-	margin: 0 auto 58px;
+	margin: 58px auto;
 	padding: 0;
 }
 
@@ -129,4 +133,56 @@ body {
 /* Financeiro  */
 #category-214 {
 	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/para-que-serve-o-financeiro.png');
+}
+
+#category-217 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/perguntas-frequentes.png');
+}
+
+#category-195 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/contas-a-pagar.png');
+}
+
+#category-137 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/fluxo-de-caixa.png');
+}
+
+#category-170 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/movimento-bancario.png');
+}
+
+#category-142 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/anexos.png');
+}
+
+#category-144 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/recebiveis.png');
+}
+
+#category-156 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/orcamento.png');
+}
+
+#category-162 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/cartao-de-credito.png');
+}
+
+#category-187 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/conciliacao.png');
+}
+
+#category-261 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/meu-painel.png');
+}
+
+#category-266 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/contas-a-receber.png');
+}
+
+#category-275 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/menu-cadastros.png');
+}
+
+#category-296 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/menu-administracao.png');
 }
