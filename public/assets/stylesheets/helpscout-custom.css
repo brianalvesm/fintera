@@ -23,7 +23,11 @@ body {
 	margin: 0 20px 30px 0;
 	padding: 210px 14px 20px;
 	background-repeat: no-repeat;
-	background-position: center 70px;
+	background-position: center 40px;
+}
+
+.category-list .category#category-214, .category-list .category#category-214:hover {
+	background-position: center 30px;
 }
 
 .navbar .brand {
