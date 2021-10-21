@@ -21,14 +21,14 @@ body {
 	border-radius: 4px;
 	border: none;
 	margin: 0 20px 30px 0;
-	padding: 210px 14px 20px;
+	padding: 230px 14px 20px;
 	background-repeat: no-repeat;
-	background-position: center 40px;
+	background-position: center 50px;
 }
 
-.category-list .category#category-214, .category-list .category#category-214:hover {
+/*.category-list .category#category-214, .category-list .category#category-214:hover {
 	background-position: center 30px;
-}
+}*/
 
 .navbar .brand {
 	padding: 15px 0;
