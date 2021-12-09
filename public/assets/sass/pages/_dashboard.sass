@@ -18,6 +18,7 @@
 		background-color: transparent
 		.topbar
 			background-color: transparent
+			flex-basis: unset
 
 	.topbar i
 		color: white
@@ -44,9 +45,10 @@
 				fill: #444 !important
 
 .profile-selection
-	max-width: 245px
+	border-radius: 6px
+	overflow: hidden
 	.scroll
-		max-height: 180px
+		max-height: 600px
 		overflow-y: auto
 		/* width */
 		&::-webkit-scrollbar
@@ -63,25 +65,27 @@
 		/* Handle on hover */
 		&::-webkit-scrollbar-thumb:hover
 			background: #999
-	.list-fade-out
-		position: relative
-		&:after
-			content: ""
-			position: absolute
-			bottom: 0
-			left: 0
-			z-index: 2
-			display: block
-			height: 45px
-			width: 100%
-			background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%)
-			background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%)
-			background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%)
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 )
-	a
+
+	.profile-item
+		padding: 22px 32px
+		font-size: 18px
+		text-align: left
+		color: white
+		font-weight: 500
+		background-color: rgba(white, 0.3)
+		border: 1px solid rgba(white, 0.3)
 		text-overflow: ellipsis
 		white-space: nowrap
 		overflow: hidden
+		&:hover
+			background-color: rgba(white, 0.5)
+			text-decoration: none
+		&:first-child
+			border-radius: 6px 6px 0 0
+		&:last-child
+			border-radius: 0 0 6px 6px
+		&.active
+			background-color: transparent
 
 .profile-selected
 	display: inline-flex
@@ -91,3 +95,8 @@
 		white-space: nowrap
 		overflow: hidden
 		max-width: 300px
+
+@media (max-width: 991.98px)
+	.accounts-app .brand
+		display: block
+		height: initial
