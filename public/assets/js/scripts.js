@@ -18,4 +18,8 @@ var profileItems = function () {
 
 $(document).ready(function () {
   profileItems();
+
+  $(window).resize(function() {
+    profileItems();    
+  });
 });
