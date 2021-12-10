@@ -394,16 +394,13 @@
   background: #999;
 }
 .profile-selection .profile-item {
-  padding: 22px 32px;
+  padding: 24px 32px;
   font-size: 18px;
   text-align: left;
   color: white;
   font-weight: 500;
   background-color: rgba(255, 255, 255, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .profile-selection .profile-item:hover {
   background-color: rgba(255, 255, 255, 0.5);
@@ -417,6 +414,36 @@
 }
 .profile-selection .profile-item.active {
   background-color: transparent;
+}
+.profile-selection .profile-item .profile-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 300px;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.profile-selection .profile-item .profile-title:hover {
+  text-decoration: none;
+}
+.profile-selection .profile-item .arrow-icon {
+  width: 12px;
+}
+@media (max-width: 40rem) {
+  .profile-selection .profile-item.hide {
+    height: 0;
+    visibility: hidden;
+    padding: 0;
+  }
+  .profile-selection .profile-item.active .arrow-icon {
+    transform: rotate(-90deg);
+  }
+  .profile-selection .profile-item.active.closed {
+    border-radius: 6px;
+  }
+  .profile-selection .profile-item.active.closed .arrow-icon {
+    transform: rotate(90deg);
+  }
 }
 
 .profile-selected {
@@ -436,6 +463,18 @@
     height: initial;
   }
 }
+.card.card-custom {
+  transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.card.card-custom:hover, .card.card-custom:focus {
+  cursor: pointer;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.card.card-custom a:hover {
+  text-decoration: none;
+}
+
 .guidelines a {
   color: #FF69B4;
 }

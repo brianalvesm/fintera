@@ -67,16 +67,13 @@
 			background: #999
 
 	.profile-item
-		padding: 22px 32px
+		padding: 24px 32px
 		font-size: 18px
 		text-align: left
 		color: white
 		font-weight: 500
 		background-color: rgba(white, 0.3)
 		border: 1px solid rgba(white, 0.3)
-		text-overflow: ellipsis
-		white-space: nowrap
-		overflow: hidden
 		&:hover
 			background-color: rgba(white, 0.5)
 			text-decoration: none
@@ -86,6 +83,29 @@
 			border-radius: 0 0 6px 6px
 		&.active
 			background-color: transparent
+		.profile-title
+			text-overflow: ellipsis
+			white-space: nowrap
+			overflow: hidden
+			max-width: 300px
+			font-size: 18px
+			margin-bottom: 0
+			&:hover
+				text-decoration: none
+		.arrow-icon
+			width: 12px
+		@media (max-width: 40rem)
+			&.hide
+				height: 0
+				visibility: hidden
+				padding: 0
+			&.active
+				.arrow-icon
+					transform: rotate(-90deg)
+				&.closed
+					border-radius: 6px
+					.arrow-icon
+						transform: rotate(90deg)
 
 .profile-selected
 	display: inline-flex
@@ -100,3 +120,13 @@
 	.accounts-app .brand
 		display: block
 		height: initial
+
+.card.card-custom
+	transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1)
+	&:hover,
+	&:focus
+		cursor: pointer
+		box-shadow: 0 0 30px rgba(black, 0.2)
+		transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1)
+	a:hover
+		text-decoration: none
