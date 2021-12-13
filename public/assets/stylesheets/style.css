@@ -431,9 +431,9 @@
 }
 @media (max-width: 40rem) {
   .profile-selection .profile-item.hide {
+    padding: 0;
     height: 0;
     visibility: hidden;
-    padding: 0;
   }
   .profile-selection .profile-item.active .arrow-icon {
     transform: rotate(-90deg);
