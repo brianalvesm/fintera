@@ -4,25 +4,27 @@ $('.bg-preview-btn').click( function() {
 
 $(document).ready(function () {
 
+  var $activeProfile = $('.profile-item.active')
+
   var profileItems = function () {
 
     if ($(window).width() < 640) {
-      $('.profile-item.active').addClass('closed');
-      $('.profile-item.active').nextAll().addClass('hide');
+      $activeProfile.addClass('closed');
+      $activeProfile.nextAll().addClass('hide');
 
-      $('.profile-item.active').click( function() {
+      $activeProfile.click( function() {
         $(this).toggleClass('closed');
         $(this).nextAll().toggleClass('hide');
       })
     } else {
-      $('.profile-item.active').removeClass('closed');
-      $('.profile-item.active').nextAll().removeClass('hide');
+      $activeProfile.removeClass('closed');
+      $activeProfile.nextAll().removeClass('hide');
     }
   };
+
+  profileItems();
 
   $(window).resize(function() {
     profileItems();    
   });
-
-  profileItems();
 });

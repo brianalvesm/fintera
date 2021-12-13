@@ -444,6 +444,9 @@
   .profile-selection .profile-item.active.closed .arrow-icon {
     transform: rotate(90deg);
   }
+  .profile-selection .profile-item .profile-title {
+    max-width: 200px;
+  }
 }
 
 .profile-selected {
@@ -473,6 +476,20 @@
 }
 .card.card-custom a:hover {
   text-decoration: none;
+}
+
+.dashboard-title {
+  font-size: 30px;
+}
+@media (max-width: 40rem) {
+  .dashboard-title {
+    margin-top: 25px;
+  }
+}
+
+.dashboard-description {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .guidelines a {
