@@ -74,6 +74,7 @@
 		font-weight: 500
 		background-color: rgba(white, 0.3)
 		border: 1px solid rgba(white, 0.3)
+		@include transition(0.2s)
 		&:hover
 			background-color: rgba(white, 0.5)
 			text-decoration: none
@@ -98,7 +99,9 @@
 			&.hide
 				padding: 0
 				height: 0
+				opacity: 0
 				visibility: hidden
+				@include transition(0.2s)
 			&.active
 				.arrow-icon
 					transform: rotate(-90deg)
