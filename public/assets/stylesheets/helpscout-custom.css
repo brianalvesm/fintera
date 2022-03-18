@@ -223,3 +223,8 @@ body {
 	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/ead.png');
 	background-color: #AF7CB9;
 }
+
+.category-list #category-405 h3 {
+	font-weight: 600;
+	color: #ffffff;
+}
