@@ -228,3 +228,10 @@ body {
 	font-weight: 600;
 	color: #ffffff;
 }
+
+#collection-category-409 .category-list .category, #collection-category-409 .category-list .category:hover {
+	padding: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
