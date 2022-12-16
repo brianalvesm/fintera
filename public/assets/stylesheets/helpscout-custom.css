@@ -224,6 +224,26 @@ body {
 	background-color: #AF7CB9;
 }
 
+#category-518 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/passo-a-passo-financeiro.png');
+	background-color: #AF7CB9;
+}
+
+#category-457 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/recebimentos.png');
+	background-color: #AF7CB9;
+}
+
+#category-510 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/gerenciar-conta.png');
+	background-color: #AF7CB9;
+}
+
+#category-516 {
+	background-image: url('https://brianalvesm.github.io/fintera/public/assets/media/ajuda/gerenciar-perfil.png');
+	background-color: #AF7CB9;
+}
+
 .category-list #category-405 h3 {
 	font-weight: 600;
 	color: #ffffff;
